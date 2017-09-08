@@ -1,0 +1,43 @@
+{
+  "name": "learning-angular",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Scott Howell III",
+  "license": "ISC",
+  "description": "Learning angular",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Sdhowell3/learning-angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sdhowell3/learning-angular/issues"
+  },
+  "homepage": "https://github.com/Sdhowell3/learning-angular#readme",
+  "dependencies": {
+    "@angular/common": "^4.4.0-RC.0",
+    "@angular/compiler": "^4.4.0-RC.0",
+    "@angular/core": "^2.4.10",
+    "@angular/http": "^4.4.0-RC.0",
+    "@angular/platform-browser": "^4.4.0-RC.0",
+    "@angular/platform-browser-dynamic": "^4.4.0-RC.0",
+    "@angular/router": "^4.4.0-RC.0",
+    "@angular/router-deprecated": "^2.0.0-rc.2",
+    "@types/lodash": "^4.14.58",
+    "bootstrap": "^3.3.7",
+    "es6-shim": "^0.35.3",
+    "install": "^0.10.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.3",
+    "systemjs": "^0.20.18",
+    "zone.js": "^0.8.17"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.2.2",
+    "typescript": "^2.5.2"
+  }
+}
