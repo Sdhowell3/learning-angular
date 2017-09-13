@@ -10,7 +10,7 @@ System.register(["@angular/core", "@angular/platform-browser-dynamic"], function
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, platform_browser_dynamic_1, HelloAngularComponent;
+    var core_1, platform_browser_dynamic_1, PomodoroTimerComponent;
     return {
         setters: [
             function (core_1_1) {
@@ -21,21 +21,21 @@ System.register(["@angular/core", "@angular/platform-browser-dynamic"], function
             }
         ],
         execute: function () {
-            HelloAngularComponent = /** @class */ (function () {
-                function HelloAngularComponent() {
-                    this.greeting = 'Hello Angular 2!';
+            PomodoroTimerComponent = /** @class */ (function () {
+                function PomodoroTimerComponent() {
+                    this.minutes = 24;
+                    this.seconds = 59;
                 }
-                HelloAngularComponent = __decorate([
+                PomodoroTimerComponent = __decorate([
                     core_1.Component({
-                        selector: 'hello-angular',
-                        template: '<h1> {{greeting}} </h1>'
+                        selector: 'pomodoro-timer',
+                        template: '<h1> {{ minutes }}:{{ seconds }} </h1>'
                     }),
                     __metadata("design:paramtypes", [])
-                ], HelloAngularComponent);
-                return HelloAngularComponent;
+                ], PomodoroTimerComponent);
+                return PomodoroTimerComponent;
             }());
-            // Component is bootstrapped!
-            platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(HelloAngularComponent);
+            platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(PomodoroTimerComponent);
         }
     };
 });
