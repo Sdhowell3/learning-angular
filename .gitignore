@@ -1,0 +1,23 @@
+# IntelliJ ignores
+.idea
+
+# Sublime ignores
+.*sublime*
+*sublime-workspace
+
+# Ignore VIM temporary files
+*.swo
+*.swp
+
+# OSX temp files
+.DS_Store
+
+# Node library and traditional temp file ignores
+*.log
+node_modules/
+allure-results/
+coverage/
+bower_components/
+dist/
+built/
+npm-debug.log
