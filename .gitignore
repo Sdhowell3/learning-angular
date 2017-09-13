@@ -19,4 +19,5 @@ allure-results/
 coverage/
 bower_components/
 dist/
+built/
 npm-debug.log
