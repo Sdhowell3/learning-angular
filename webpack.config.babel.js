@@ -12,9 +12,15 @@ export default {
   watch: true,
   entry:{app: './src/app/app.ts'},
   module:{ exprContextCritical: false},
-  resolve: { extensions: [ ".tsx", ".ts", ".js" ] },
+  resolve: {
+    modules: [
+      path.resolve('./src/app'),
+      path.resolve('node_modules')
+    ],
+    extensions: ['.tsx', '.ts', '.js']
+  },
   output:{
-    path: path.resolve(`${__dirname}/../portal-engine/public`),
+    path: path.resolve('./dist'),
     sourceMapFilename: '[file].map',
     filename:'[name].development.js',
   },

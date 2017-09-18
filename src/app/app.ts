@@ -1,17 +1,8 @@
-import {Component} from '@angular/core';
+import 'reflect-metadata';
+import 'zone.js/dist/zone';
+import {enableProdMode} from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {AppModule} from './AppModule';
 
-@Component({
-  selector: 'app',
-  template: '<h1> {{greeting}} </h1>'
-})
-
-class HelloAngularComponent {
-  greeting: string;
-  constructor() {
-    this.greeting = 'Hello Angular 2!';
-  }
-}
-
-// Component is bootstrapped!
-platformBrowserDynamic().bootstrapModule(HelloAngularComponent);
+if(process.env.NODE_ENV==='production') enableProdMode();
+platformBrowserDynamic().bootstrapModule(AppModule);

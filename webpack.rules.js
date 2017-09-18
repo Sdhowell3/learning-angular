@@ -1,20 +1,9 @@
 export const rules = [
   {
-    test: /\.js$/,
+    test: /\.js|\.tsx?$/,
     exclude: /node_modules/,
     use: [
       'babel-loader',
-      {
-        loader: 'eslint-loader',
-        options: {fix: true}
-      }
-    ]
-  },
-  {
-    test: /\.tsx?$/,
-    exclude: /node_modules/,
-    use: [
-      'ts-loader',
       {
         loader: 'eslint-loader',
         options: {fix: true}
