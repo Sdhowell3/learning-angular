@@ -6,10 +6,11 @@ import {rules}       from './webpack.rules';
 import {index}       from './index.manifest';
 import indexTemplate from 'html-webpack-template-pug';
 import HtmlPlugin    from 'html-webpack-plugin';
+import BrowserSync   from 'browser-sync-webpack-plugin';
 
 export default {
   watch: true,
-  entry:{app: './src/app/app.js'},
+  entry:{app: './src/app/app.ts'},
   module:{ exprContextCritical: false},
   resolve: { extensions: [ ".tsx", ".ts", ".js" ] },
   output:{
@@ -19,6 +20,11 @@ export default {
   },
   devtool: 'source-map',
   plugins:[
+    new BrowserSync({
+      host: 'localhost',
+      port: 8000,
+      server: { baseDir: ['./dist'] }
+    }),
     new webpack.ExtendedAPIPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',

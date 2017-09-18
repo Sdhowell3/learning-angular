@@ -20,7 +20,7 @@ export const rules = [
         options: {fix: true}
       }
     ]
-  }
+  },
   {
     test: /\.styl$/,
     use: ['css-loader','stylus-loader']
